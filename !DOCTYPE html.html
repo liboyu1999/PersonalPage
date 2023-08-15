@@ -1,23 +1,147 @@
 <!DOCTYPE html>
 <html>
+<style>
+
+li {
+display: inline-block;
+  margin-right: 10px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 60%; 
+  margin-left:0;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 4px; 
+  font-size: 16px; /* Reduce the font size */
+}
+
+.tech {
+  font-weight: bold;
+}
+    
+.feature {
+  color: green;
+}
+</style>
 <head>
-    <title>Your Resume</title>
-    <!-- Include your CSS stylesheets here -->
+    <title>Boyu Li's Personal Website</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Your Resume</h1>
-        <!-- Navigation menu or back to home link -->
+        <h1>Welcome to My Personal Website</h1>
     </header>
+    
+    <nav>
+        <ul>
+	    <li><a href="#Education">Education</a></li>
+            <li><a href="#Skills">Skills</a></li>
+	    <li><a href="#Experience">Experience</a></li>
+            <li><a href="#Project">Project</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <section>
-        <h2>Resume</h2>
-        <!-- Embed the PDF from Overleaf -->
-        <iframe src="C:\Users\liboy\Desktop\personal_page\CV.pdf" width="100%" height="600px"></iframe>
+    <section id="Education">
+        <h2>Education</h2>
+		<table>
+  <tr>
+    <th>Year</th>
+    <th>Degree</th>
+    <th>Insitute</th>
+    <th>GPA/Marks</th>
+  </tr>
+  <tr>
+    <td>Sep, 2021 - Now</td>
+    <td>Master’s of Engineering in Computer Engineering</td>
+    <td>Texas A&M University</td>
+    <td>3.90/4.00</td>
+  </tr>
+  <tr>
+    <td>Sep, 2017 - Jun, 2021</td>
+    <td>Bachelor’s of Engineer in Mechanical Engineering</td>
+    <td>Tongji University</td>
+    <td>4.42/5.00</td>
+  </tr>
+</table>
     </section>
 
+    <section id="Skills">
+        <h2>Skills</h2>
+        <p>• Programming Language: Python, C, C#, C++, Matlab, Structured Text, Assembly Language, Javascript, HTML, CSS, Typescript, SQL</p>
+
+	<p>• Frameworks: Pytorch, React, Docker, VMware, ReactNative.js, AWS, Firebase, Angular.js, Node.js, Redux, Express.js, .NET</p>
+
+	<p>• Databases & Tools: Microsoft SQL Server, Microsoft Visual Studio, Jupyter Notebook, VScode, Linux, Mocha, Chai</p>
+    </section>
+
+
+<section id="Experience">
+    <h2>Experience</h2>
+    <p>
+        • Developed <span class="tech">pipeline</span> that generated product parameter by establishing <span class="tech">.Net WinForm application</span>.<br>
+        • Implemented <span class="tech">C# .Net application</span> to <span class="feature">access, write data in Microsoft SQL Server</span>.<br>
+        • Developed <span class="tech">Web Application</span> to display product form by implementing <span class="tech">JavaScript in React</span>.<br>
+        • Implemented <span class="feature">Unit Test</span> using <span class="tech">C#</span> and <span class="tech">Containerized</span> the above applications in <span class="tech">	Docker</span>.<br>
+        • Realized <span class="feature">Agile methodology</span> in the whole development.
+    </p>
+</section>
+    
+<section id="Project">
+    <h2>Project</h2>
+    <p><strong>Blog Management Application | Group Project</strong></p>
+    <p>
+        • Built a <strong class="tech">Blog management Application</strong> with <span class="tech">MongoDB Atlas, Express.js, Angular.js, Node.js, Firebase.js</span>.<br>
+        • Implemented <span class="feature">sign up</span> with Firebase <span class="tech">Auth API</span>.<br>
+        • Conducted <span class="feature">unit tests</span> using <span class="tech">Mocha</span> and <span class="tech">Chai</span> for ensuring performance.<br>
+        • <strong>Github Link</strong>: <a href="https://github.com/zdong2080/BlogManagement">https://github.com/zdong2080/BlogManagement</a>
+    </p>
+
+    <p><strong>Ping! | Group Project</strong></p>
+    <p>
+        • Developed Emergency Notification Application on mobile phone in <span class="tech">JavaScript</span> on <span class="tech">ReactNative</span> with <span class="tech">Expo</span>.<br>
+        • Established the backend part based on <span class="tech">Firebase</span> to <span class="feature">store, access, modify user information</span>.<br>
+        • Released the app using <span class="tech">Expo Release</span>.<br>
+        • <strong>Github Link</strong>: <a href="https://github.com/CSCE-606/MobileFrontend">https://github.com/CSCE-606/MobileFrontend</a>
+    </p>
+
+
+    <p><strong>10-Class Image Classification based on Resnet | Course Project</strong></p>
+    <p>
+        • Adapted <strong class="tech">Resnet</strong> and implemented in <strong class="tech">Python</strong> with <strong class="tech">CIFAR-10 DATASET</strong>.<br>
+        • Implemented the advanced <strong class="tech">Resnet method</strong> to train the classifier under <strong class="tech">pytorch Frame</strong>.<br>
+        • <span class="feture">Visualized the classification result</span> with <strong class="tech">Matplotlib</strong> and <strong class="tech">Seaborn</strong>.<br>
+    </p>
+
+    <p><strong>TCP Server | Course Project, Team Leader</strong></p>
+    <p>
+        • Built the virtual Linux environment for project based on <span class="tech">VMware Player</span>.<br>
+        • Built the socket as the server side using <span class="tech">C++</span>, which can accept communication request, show response form client side.<br>
+        • Applied <span class="tech">TFTP</span> and <span class="tech">UDP</span> for document exchange from client side to server side.<br>
+        • Simulated the data flow and visualized the communication process based on <span class="tech">TCP</span> using <span class="tech">NS-2 Simulator</span>.<br>
+    </p>
+
+    <p><strong>Design of Student Performance Management System| Course Project</strong></p>
+    <p>
+        • Accessed student performance data from school database with <span class="tech">MySQL Server</span>.<br>
+        • Designed the Performance Management System with <span class="tech">C++</span>, which implemented SQL command, i.e., the function of <span class="feature">adding, deleting, 	modified</span> and <span class="feature">Class management</span>.
+    </p>
+</section>
+
+</section>
+    
+    <section id="Contact">
+        <h2>Contact</h2>
+        <p>You can reach me at <a href="mailto:liboyu1999@tamu.edu">liboyu1999@tamu.edu</a>.</p>
+    </section>
+    
     <footer>
-        <!-- Your footer content here -->
+        <p>&copy; 2023 Boyu Li</p>
     </footer>
 </body>
 </html>
