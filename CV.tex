@@ -1,0 +1,126 @@
+\documentclass[a4paper,10pt]{article}
+%-----------------------------------------------------------
+\usepackage[top=0.5in, bottom=0.5in, left=0.55in, right=0.85in]{geometry}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{palatino}
+\usepackage{tabularx}
+\fontfamily{SansSerif}
+\selectfont
+ 
+\usepackage[T1]{fontenc}
+\usepackage
+%[ansinew]
+[utf8]
+{inputenc}
+ 
+\usepackage{color}
+\definecolor{mygrey}{gray}{0.75}
+\textheight=9.75in
+\raggedbottom
+ 
+\setlength{\tabcolsep}{0in}
+\newcommand{\isep}{-2 pt}
+\newcommand{\lsep}{-0.5cm}
+\newcommand{\psep}{-0.6cm}
+\renewcommand{\labelitemii}{$\circ$}
+ 
+\pagestyle{empty}
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\small \colorbox{mygrey}{\begin{minipage}{0.975\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[3]{
+\begin{tabular*}{6.62in}{l @{\extracolsep{\fill}} r}
+	\textsc{{\textbf{#1}}} & \textsc{\textit{[#2]}} \\
+\end{tabular*}\vspace{-8pt}}
+%-----------------------------------------------------------
+ 
+\begin{document}
+\hspace{0.5cm}\\[-0.2cm]
+\begin{center}
+\textbf{Boyu Li}   
+\end{center}
+\hspace{0.2in}Email : \textbf{\url{liboyu1999@tamu.edu}} \hfill Mobile Number: \textbf{9792047789}  \\
+\indent Github Link: \textbf{\url{https://github.com/liboyu1999}}\\
+\indent LinkedIn Link: \textbf{\url{https://www.linkedin.com/in/boyu-li-49440b223/}}\\
+\indent Personal Website: \textbf{\url{https://liboyu1999.github.io/PersonalPage/}}
+ 
+\resheading{\textbf{Education} }\\[\lsep]
+
+%\begin{table}[ht!]
+%\begin{center}
+\indent \rule{6.8in}{0.4pt}\\
+\indent \begin{tabular}{ l @{\hskip 0.1in} l @{\hskip 0.1in} l @{\hskip 0.1in} l @{\hskip 0.1in} }
+\noindent \textbf{Year} & \textbf{Degree} & \textbf{Institute} & \textbf{GPA/Marks}\\
+Sep, 2021 - Now & Master's of Engineering in Computer Engineering & Texas A\&M University & 3.90/4.00\\
+Sep, 2017 - Jun, 2021 & Bachelor's of Engineer in Mechanical Engineering & Tongji University & 4.42/5.00 \\
+ 
+\end{tabular}
+
+%\end{center}
+%\end{table}
+\resheading{\textbf{Technology \& Programming Language} }\\[\lsep]
+\begin{itemize}
+\setlength\itemsep{-0.5em}
+\item \textbf{Programming Language: }Python, C, C\#, C++, Matlab, Structured Text, Assembly Language,Javascript, HTML, CSS, Typescript, Java, SQL
+\item \textbf{Frameworks: }Pytorch, React, Docker, VMware, ReactNative.js, AWS, Firebase, Angular.js, Node.js,Redux, Express.js, .NET, MongoDB, SpringBoot
+\item \textbf{Databases \& Tools \& Ability: }Microsoft SQL Server, Microsoft Visual Studio, Jupyter Notebook, VScode, Linux, Mocha, Chai, Machine Learning, Deep Learning
+\end{itemize}
+
+\resheading{\textbf{Working Experience} }\\
+\indent \rule{6.88in}{0.4pt}\\
+\indent \begin{tabular}{ l @{\hskip 0.15in} l @{\hskip 1.1in} l @{\hskip 0.15in} l @{\hskip 0.15in} }
+\noindent \textbf{Year} & \textbf{Position} & \textbf{Company} & \textbf{Location}\\
+May, 2022 - Aug, 2022 & Software Engineer Internship   
+ & Arbin Instrument & College Station, TX
+\end{tabular}
+\\
+
+\indent• Developed pipeline that generated product parameter by establishing .Net WinForm application.\\
+\indent• Implemented C\# .Net application to access, write data in Microsoft SQL Server.\\
+\indent• Developed Web Application to display product form by implementing JavaScript in React.\\
+\indent• Containerized the above applications in Docker and realized Agile methodology in the whole development.\\
+ 
+\resheading{\textbf{PROJECTS} }\\[\lsep]
+\begin{itemize}
+\setlength\itemsep{0em}
+
+\item \textbf{Blog Management Application\!|Group Project} \hfill May 2023 – Aug 2023 \\
+•Built a Blog management Application with MongoDB Atlas, Express.js, Angualr.js, Node,js, Firebase,js..\\
+• Implemented user sign up with Firebase Auth Api.\\
+• Conducted unit tests using Mocha and Chai for ensuring performance.\\
+• Github Link:\textbf{\url{https://github.com/zdong2080/BlogManagement}}
+
+\item \textbf{ Multi-Layer Perceptron Neural Network Implementation| Personal Project} \hfill Dec 2022 – Dec 2022\\
+• Created an MLP class with methods for loading, saving, and updating weights, and predicting.\\
+• Implemented MLP features: computed sigmoid activations and derivatives for hidden and output layers.\\
+• Managed weight settings using file operations.
+
+\item \textbf{Ping\!|Group Project} \hfill Jan 2022 – May 2022 \\
+•Developed Ping app on mobile phone by implementing JavaScript on ReactNative with Expo.\\
+• Established the backend part based on with Firebase to store, access, modify user information.\\
+• Release app based on Expo Release.\\
+• Github Link:\textbf{\url{ https://github.com/CSCE-606/MobileFrontend}}
+
+\item \textbf{10-Class Image Classification based on Resnet | Course Project} \hfill Sep 2021 – Nov 2021\\
+• Adapted Resnet and implemented in Python with CIFAR-10 DATASET.\\
+• Implemented the advanced Resnet method to train the classifier under pytorch Frame.\\
+• Visualized the classification result with Matplotlib and Seaborn.
+
+\item \textbf{TCP Server | Course Project, Team Leader} \hfill Sep 2021 – Dec 2021\\
+• Built the virtual Linux environment for project based on VMware Player.\\
+• Built the socket as the server side using C++, which can accept communication request, show response
+from client side.\\
+• Applied TFTP and UDP for document exchange from client side to server side.
+
+\item \textbf{Design of Student Performance Management System| Course Project} \hfill Nov 2018 – Jul 2019\\
+• Designed class containing student information, student performance, and method to create, read, update, and delete instance in C++.\\
+• developed a menu system that facilitates interaction with above Methods.
+
+\end{itemize}
+\end{document}
+ 
+
+ 
+
